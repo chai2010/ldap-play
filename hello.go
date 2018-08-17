@@ -35,7 +35,7 @@ func auth() {
 
 	// Search for the given username
 	searchRequest := ldap.NewSearchRequest(
-		"dc=example,dc=com",
+		"dc=beispiel,dc=de",
 		ldap.ScopeWholeSubtree, ldap.NeverDerefAliases, 0, 0, false,
 		fmt.Sprintf("(&(objectClass=organizationalPerson)(uid=%s))", username),
 		[]string{"dn"},
