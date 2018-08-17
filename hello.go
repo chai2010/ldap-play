@@ -25,7 +25,7 @@ func auth() {
 	}
 	defer l.Close()
 
-	l.Start()
+	//l.StartTLS()
 
 	// First bind with a read only user
 	err = l.Bind(bindusername, bindpassword)
